@@ -1,0 +1,50 @@
+[project]
+
+name = PSP
+version = "1.0.0.dev1"
+description = "Sets Up and Manages Python Projects/Libraries"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["Project", "setuptools", "development", "Management", "Project Management", "Python"]  # Optional
+authors = [
+  {name = "JVormstein" email = "jvormstein@outlook.de"} # Optional
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  
+  "License :: OSI Approved :: MIT License",
+
+  "Environment :: Console",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+]
+
+[project.optional-dependencies]
+#dev = []
+#test = []
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/JVormstein/PSP"
+"Bug Reports" = "https://github.com/JVormstein/PSP/issues"
+#"Funding" = ""
+#"Say Thanks!" = ""
+"Source" = "https://github.com/JVormstein/PSP"
+
+[project.scripts]  # Optional
+psp = "PSP:start_cli"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
